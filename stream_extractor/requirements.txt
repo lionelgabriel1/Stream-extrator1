@@ -1,0 +1,22 @@
+# ─── Core ──────────────────────────────────────────────────────────────────────
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# ─── Stream ────────────────────────────────────────────────────────────────────
+streamlink>=6.0.0          # Acesso à stream sem navegador (Twitch + YouTube)
+
+# ─── OCR ───────────────────────────────────────────────────────────────────────
+pytesseract>=0.3.10        # OCR principal (requer Tesseract instalado no sistema)
+easyocr>=1.7.0             # OCR fallback (mais pesado, baixa automaticamente modelos)
+
+# ─── Banco de dados ────────────────────────────────────────────────────────────
+psycopg2-binary>=2.9.0     # PostgreSQL
+# sqlite3 já vem embutido no Python
+
+# ─── Utilitários ───────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0       # Variáveis de ambiente (.env)
+
+# ─── Opcional: monitoramento ───────────────────────────────────────────────────
+# prometheus-client>=0.17.0   # Métricas Prometheus
+# flask>=3.0.0                 # Dashboard web simples
